@@ -10,6 +10,13 @@ LoggerDelegate : will help when creating a service task, will show the different
 
 ProcessConstants : contains PROCESS_DEFINITION_KEY (by default the name of the project if not changed)
 
+now lets modify the process.bpmn file by adding two user tasks:
+
+![image](https://github.com/ghailen/camunda-spring-project-example/assets/36199753/b02d00b2-4874-4251-ab88-1631123347a0)
+
+the process_definition_key in processconstants class must be the same in the bpmn id process
+
+
 
 A Process Application for [Camunda Platform](http://docs.camunda.org).
 
