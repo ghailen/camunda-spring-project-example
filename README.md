@@ -12,7 +12,8 @@ ProcessConstants : contains PROCESS_DEFINITION_KEY (by default the name of the p
 
 now lets modify the process.bpmn file by adding two user tasks:
 
-![image](https://github.com/ghailen/camunda-spring-project-example/assets/36199753/b02d00b2-4874-4251-ab88-1631123347a0)
+![image](https://github.com/ghailen/camunda-spring-project-example/assets/36199753/95cdaac2-06b3-4e90-8eb1-15c5307ced92)
+
 
 the process_definition_key in processconstants class must be the same in the bpmn id process
 
