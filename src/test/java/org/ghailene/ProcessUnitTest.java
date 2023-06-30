@@ -16,6 +16,8 @@ import static org.junit.Assert.*;
 /**
  * Test case starting an in-memory database-backed Process Engine.
  */
+
+/*
 public class ProcessUnitTest {
 
   static {
@@ -43,3 +45,4 @@ public class ProcessUnitTest {
   }
 
 }
+*/

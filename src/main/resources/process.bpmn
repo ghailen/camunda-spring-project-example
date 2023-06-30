@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn">
-  <bpmn:process id="camunda-spring-servlet-war-project-example" name="camunda-spring-servlet-war-project-example" isExecutable="true">
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.12.1">
+  <bpmn:process id="camunda-spring-servlet-war-project-example" name="camunda-spring-servlet-war-project-example" isExecutable="true" camunda:versionTag="v1.0">
     <bpmn:startEvent id="StartEventProcessStarted" name="Process&#10;started">
       <bpmn:outgoing>SequenceFlow1</bpmn:outgoing>
     </bpmn:startEvent>
     <bpmn:endEvent id="EndEventProcessEnded" name="Process&#10;ended">
-      <bpmn:incoming>SequenceFlow1</bpmn:incoming>
+      <bpmn:incoming>Flow_0qg6hks</bpmn:incoming>
     </bpmn:endEvent>
-    <bpmn:sequenceFlow id="SequenceFlow1" sourceRef="StartEventProcessStarted" targetRef="EndEventProcessEnded" />
+    <bpmn:sequenceFlow id="SequenceFlow1" sourceRef="StartEventProcessStarted" targetRef="Activity_0ol5qo0" />
+    <bpmn:sequenceFlow id="Flow_111nzle" sourceRef="Activity_0ol5qo0" targetRef="Activity_1uijmly" />
+    <bpmn:sequenceFlow id="Flow_0qg6hks" sourceRef="Activity_1uijmly" targetRef="EndEventProcessEnded" />
+    <bpmn:userTask id="Activity_1uijmly" name="Send the form">
+      <bpmn:incoming>Flow_111nzle</bpmn:incoming>
+      <bpmn:outgoing>Flow_0qg6hks</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="Activity_0ol5qo0" name="Fill the form">
+      <bpmn:incoming>SequenceFlow1</bpmn:incoming>
+      <bpmn:outgoing>Flow_111nzle</bpmn:outgoing>
+    </bpmn:userTask>
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="camunda-spring-servlet-war-project-example">
@@ -20,12 +30,26 @@
           <dc:Bounds x="529" y="138" width="90" height="20" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0bwawyt_di" bpmnElement="Activity_1uijmly">
+        <dc:Bounds x="400" y="80" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1bhc4tk_di" bpmnElement="Activity_0ol5qo0">
+        <dc:Bounds x="260" y="80" width="100" height="80" />
+      </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="SequenceFlow_08va5r8_di" bpmnElement="SequenceFlow1">
-        <di:waypoint xsi:type="dc:Point" x="209" y="120" />
-        <di:waypoint xsi:type="dc:Point" x="556" y="120" />
+        <di:waypoint x="209" y="120" />
+        <di:waypoint x="260" y="120" />
         <bpmndi:BPMNLabel>
           <dc:Bounds x="337.5" y="110" width="90" height="20" />
         </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_111nzle_di" bpmnElement="Flow_111nzle">
+        <di:waypoint x="360" y="120" />
+        <di:waypoint x="400" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0qg6hks_di" bpmnElement="Flow_0qg6hks">
+        <di:waypoint x="500" y="120" />
+        <di:waypoint x="556" y="120" />
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
