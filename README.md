@@ -31,3 +31,9 @@ as we can see here we have :
 ![image](https://github.com/ghailen/camunda-spring-project-example/assets/36199753/95c2b9a4-2808-4ca8-b598-07e6230547df)
 
 The camunda.cfg.xml contains the configuration , we can see the list of plugin, we can developp our proper plugin and add it to the list.
+
+
+==========Forms==============
+we can create a custom form also 
+![image](https://github.com/ghailen/camunda-spring-project-example/assets/36199753/c4849bcf-3860-488b-b368-4a3dae615162)
+
