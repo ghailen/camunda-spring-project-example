@@ -63,5 +63,15 @@ lets copy our generated war in the deployement folder:
 
 ![image](https://github.com/ghailen/camunda-spring-project-example/assets/36199753/bc0d0014-82b7-475a-9c10-fe7e6b3409ac)
 
+=============Open wildfly server===========
+
+go to cockpit , deployement:
+
+![image](https://github.com/ghailen/camunda-spring-project-example/assets/36199753/1d306dea-09e8-4a14-bdfe-96375358c5ea)
+
+our deployement is here :
+
+![image](https://github.com/ghailen/camunda-spring-project-example/assets/36199753/73faa721-0ac1-4cd9-adda-7d9dcba7ea6e)
+
 
 
