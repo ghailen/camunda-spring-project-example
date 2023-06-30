@@ -8,7 +8,7 @@ CamundaBpmProcessApplication : process the application exposing this applciation
 
 LoggerDelegate : will help when creating a service task, will show the different information , it implement JavaDelegate Interface
 
-ProcessConstants : contains the name of the project
+ProcessConstants : contains PROCESS_DEFINITION_KEY (by default the name of the project if not changed)
 
 
 A Process Application for [Camunda Platform](http://docs.camunda.org).
