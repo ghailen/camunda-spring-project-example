@@ -80,9 +80,13 @@ lets execute it via tasklist module:
 ![image](https://github.com/ghailen/camunda-spring-project-example/assets/36199753/62f8272c-688d-40c6-80ee-d003bee862b9)
 
 the user task is appeared here we can claim it and complete it:
+
 ![image](https://github.com/ghailen/camunda-spring-project-example/assets/36199753/0be08bec-3b81-4ab8-91dd-9c228abbf547)
 
-![image](https://github.com/ghailen/camunda-spring-project-example/assets/36199753/1b735972-00f7-4ff5-bd0c-14a55d2bca22)
+In the cockpit we can see the new instance of the process: 
+
+![image](https://github.com/ghailen/camunda-spring-project-example/assets/36199753/a06093bb-8222-4184-8bc2-442c1336a278)
+
 
 
 
