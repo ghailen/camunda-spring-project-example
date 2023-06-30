@@ -1,6 +1,7 @@
 # Camunda Platform Process Application
 
 ==================Main classes descitpion ============
+
 We Have here 3 classes existed in the package :
 
 ![image](https://github.com/ghailen/camunda-spring-project-example/assets/36199753/0ba8f43b-d772-4a6f-b55e-d67552674af0)
@@ -20,12 +21,14 @@ the process_definition_key in processconstants class must be the same in the bpm
 
 
 ===========Unit test==========
+
 For now we can ignore unit tests : 
 
 ![image](https://github.com/ghailen/camunda-spring-project-example/assets/36199753/425ead5e-ac52-42a0-a54b-ee5a45918a32)
 
 
 =========Camunda config files============
+
 as we can see here we have :
 
 ![image](https://github.com/ghailen/camunda-spring-project-example/assets/36199753/95c2b9a4-2808-4ca8-b598-07e6230547df)
@@ -34,14 +37,31 @@ The camunda.cfg.xml contains the configuration , we can see the list of plugin, 
 
 
 ==========Forms==============
+
 we can create a custom form also 
+
 ![image](https://github.com/ghailen/camunda-spring-project-example/assets/36199753/c4849bcf-3860-488b-b368-4a3dae615162)
 
 ==========Clean Install ==============
+
 mvn clean 
+
 mvn install 
+
 ![image](https://github.com/ghailen/camunda-spring-project-example/assets/36199753/a2338f35-8095-42ef-9129-31f773b37b30)
 
 a war will be generated.
+
+=============Deployement==========
+now lets deploy the generated war in wildfly server:
+
+we can found the camunda provided app and dependancies like webapp,api-rest....
+
+the path is : camunda-bpm-wildfly-7.18.0\server\wildfly-26.0.1.Final\standalone\deployments
+
+lets copy our generated war in the deployement folder:
+
+![image](https://github.com/ghailen/camunda-spring-project-example/assets/36199753/bc0d0014-82b7-475a-9c10-fe7e6b3409ac)
+
 
 
