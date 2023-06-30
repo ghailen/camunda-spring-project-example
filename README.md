@@ -37,3 +37,11 @@ The camunda.cfg.xml contains the configuration , we can see the list of plugin, 
 we can create a custom form also 
 ![image](https://github.com/ghailen/camunda-spring-project-example/assets/36199753/c4849bcf-3860-488b-b368-4a3dae615162)
 
+==========Clean Install ==============
+mvn clean 
+mvn install 
+![image](https://github.com/ghailen/camunda-spring-project-example/assets/36199753/a2338f35-8095-42ef-9129-31f773b37b30)
+
+a war will be generated.
+
+
