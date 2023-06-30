@@ -6,8 +6,9 @@ We Have here 3 classes existed in the package :
 
 CamundaBpmProcessApplication : process the application exposing this applciation's resources to process engine.
 
+LoggerDelegate : will help when creating a service task, will show the different information , it implement JavaDelegate Interface
 
-
+ProcessConstants : contains the name of the project
 
 
 A Process Application for [Camunda Platform](http://docs.camunda.org).
